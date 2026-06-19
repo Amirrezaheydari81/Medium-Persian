@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Medium فارسی",
+  "version": "2.0",
+  "description": "راست‌چین و فونت فارسی برای Medium و Freedium",
+  "permissions": ["activeTab", "contextMenus", "storage", "scripting"],
+  "host_permissions": [
+    "https://medium.com/*",
+    "https://*.medium.com/*",
+    "https://freedium-mirror.cfd/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://medium.com/*",
+        "https://*.medium.com/*",
+        "https://freedium-mirror.cfd/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
