@@ -45,6 +45,9 @@
 ۵. Load unpacked را بزنید و پوشه medium-rtl-extension را انتخاب کنید
 ```
 
+<a href="https://github.com/Amirrezaheydari81/Medium-Persian/releases/download/v2/medium-rtl-extension.zip"> 🔗 دانلود نسخه 2 (zip)
+</a>
+
 ### روش ۲ — کلون از گیت‌هاب
 
 ```bash
